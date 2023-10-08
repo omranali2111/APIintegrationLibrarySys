@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "vyCrK+X+VboE9O/IRZWOO6zd9RL0MbXkLGbGxCignga08Mg14GjQvHQ5oH5mtDec5JjBXYPO9I03OvZqPP6x+A==",
+  "dgSpecHash": "jyGa0+PRSXoIWqmuKa5uCOFrvyC9mABc5RmKE8ynl8mREhGuZXqJIvznft9Xque50O35Q9iKZAgUuP/pXFXKyg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ict\\Desktop\\code-TRA\\API\\APIintegrationLibrarySys\\APIintegrationLibrarySys\\APIintegrationLibrarySys.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ict\\.nuget\\packages\\auth0.core\\7.22.3\\auth0.core.7.22.3.nupkg.sha512",
+    "C:\\Users\\ict\\.nuget\\packages\\auth0.managementapi\\7.22.3\\auth0.managementapi.7.22.3.nupkg.sha512",
     "C:\\Users\\ict\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\ict\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ict\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\ict\\.nuget\\packages\\serilog\\3.0.1\\serilog.3.0.1.nupkg.sha512",
     "C:\\Users\\ict\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
     "C:\\Users\\ict\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
     "C:\\Users\\ict\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
