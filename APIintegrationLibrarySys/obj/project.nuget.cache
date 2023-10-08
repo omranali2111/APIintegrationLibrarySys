@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "vyCrK+X+VboE9O/IRZWOO6zd9RL0MbXkLGbGxCignga08Mg14GjQvHQ5oH5mtDec5JjBXYPO9I03OvZqPP6x+A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ict\\Desktop\\code-TRA\\API\\APIintegrationLibrarySys\\APIintegrationLibrarySys\\APIintegrationLibrarySys.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ict\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\ict\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\ict\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\ict\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\ict\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\ict\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
