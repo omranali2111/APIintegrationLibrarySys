@@ -11,10 +11,10 @@ namespace APIintegrationLibrarySys.models
 
         [Required]
         [MaxLength(255)]
-        public string Email { get; set; }
+        public string email { get; set; }
 
         [Required]
         [MaxLength(255)]
-        public string Password { get; set; }
+        public string password { get; set; }
     }
 }

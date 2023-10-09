@@ -15,7 +15,7 @@ namespace APIintegrationLibrarySys.Controllers
     public class OpsController : ControllerBase
     {
         HttpClient Client;
-        private string AuthToken;
+        public static string AuthToken;
         public OpsController()
         {
             Client = new HttpClient();
@@ -30,13 +30,14 @@ namespace APIintegrationLibrarySys.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllBooks()
         {
+            Log.Information($"AuthToken value: {AuthToken}");
             // Check if the token is available
             if (string.IsNullOrEmpty(AuthToken))
             {
                 return Unauthorized("Token is missing or invalid.");
             }
 
-            Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", AuthToken);
+            Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("bearer", AuthToken);
 
             try
             {
@@ -60,20 +61,25 @@ namespace APIintegrationLibrarySys.Controllers
         }
 
         [HttpPost("login")]
-        public async Task<IActionResult> Login([FromBody] User loginRequest)
+        public async Task<IActionResult> Login(string email, string password)
         {
+            var loginRequest = new { Email = email, Password = password };
+
             try
             {
                 // Log received credentials
-                Log.Information($"Received login request - Email: {loginRequest.Email}, Password: {loginRequest.Password}");
+                Log.Information($"Received login request - Email: {email}, Password: {password}");
 
                 HttpResponseMessage response = await Client.PostAsJsonAsync("api/UserLogin/user-login", loginRequest);
 
                 if (response.IsSuccessStatusCode)
                 {
-                    AuthToken = await response.Content.ReadAsStringAsync(); // Store the token
-                    return Ok(AuthToken);
+                    var tokenResponse = await response.Content.ReadAsStringAsync();
+                    AuthToken = tokenResponse; // Store the token as JSON string
+
+                    return Ok(new { Token = tokenResponse }); // Return JSON response
                 }
+            
                 else
                 {
                     Log.Warning($"Login failed - Status code: {response.StatusCode}");
@@ -86,6 +92,7 @@ namespace APIintegrationLibrarySys.Controllers
                 return StatusCode(500, $"An error occurred: {ex.Message}");
             }
         }
+
 
     }
 }

@@ -34,3 +34,4 @@ C:\Users\ict\Desktop\code-TRA\API\APIintegrationLibrarySys\APIintegrationLibrary
 C:\Users\ict\Desktop\code-TRA\API\APIintegrationLibrarySys\APIintegrationLibrarySys\obj\Debug\net6.0\APIintegrationLibrarySys.genruntimeconfig.cache
 C:\Users\ict\Desktop\code-TRA\API\APIintegrationLibrarySys\APIintegrationLibrarySys\obj\Debug\net6.0\ref\APIintegrationLibrarySys.dll
 C:\Users\ict\Desktop\code-TRA\API\APIintegrationLibrarySys\APIintegrationLibrarySys\bin\Debug\net6.0\Serilog.dll
+C:\Users\ict\Desktop\code-TRA\API\APIintegrationLibrarySys\APIintegrationLibrarySys\bin\Debug\net6.0\IdentityModel.dll
